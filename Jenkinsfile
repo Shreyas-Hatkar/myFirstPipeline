@@ -7,13 +7,13 @@ pipeline {
 
     environment {
         TOMCAT_URL = 'http://localhost:9090/manager/text'
-        TOMCAT_CREDENTIALS = 'tomcat-credentials'
+        TOMCAT_CREDENTIALS = 'tomcat-cred'
     }
 
     stages {
         stage('Clone Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/archis04/myfirst.git'
+                git branch: 'main', url: 'https://github.com/Shreyas-Hatkar/myFirstPipeline'
             }
         }
 
